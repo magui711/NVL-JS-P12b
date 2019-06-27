@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>Javascript</title>
+
+    </head>
+    <body>
+      <script>
+        
+        var numeros = [];
+        for (i=0; i<50; i++){
+        numeros.push(Math.floor((Math.random() * 100) + 1));
+        }
+        
+        var pares = [];
+        var impares = [];
+        for (i=0; i<50; i++){
+            if (numeros[i]%2==0){
+            pares.push (numeros[i]);
+            }
+            else {
+            impares.push(numeros[i]);
+            }
+        }
+        
+        function esPar(num){
+          if (num % 2 == 0){
+            console.log ('el resultado es par');
+          }else{
+            console.log ('el resultado es impar');
+          }
+        }
+
+        document.write("pares:" + " "+ pares+"<br>");
+        document.write("impares"+ " "+ impares+ "<br>");
+        
+      </script> 
+    </body>
+
+</html>
